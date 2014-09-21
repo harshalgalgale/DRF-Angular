@@ -23,4 +23,3 @@ class PropertyViewSet(viewsets.ModelViewSet):
 class ImageViewSet(viewsets.ModelViewSet):
     queryset = ObjImage.objects.all()
     serializer_class = ObjImageSerializer
-
