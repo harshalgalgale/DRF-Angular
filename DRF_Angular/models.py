@@ -1,7 +1,5 @@
 from django.db import models
 
-from django.core.files import File
-
 from DRF_Angular.settings import MEDIA_ROOT
 
 import ntpath

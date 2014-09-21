@@ -10,21 +10,21 @@ class ObjSerializer(serializers.ModelSerializer):
         fields = ('name', 'description')
 
 
-class ObjCategorySerializer(serializers.HyperlinkedModelSerializer):
+class ObjCategorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ObjCategory
         fields = ('category', 'obj')
 
 
-class ObjPropertySerializer(serializers.HyperlinkedModelSerializer):
+class ObjPropertySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ObjProperty
         fields = ('prop', 'obj')
 
 
-class ObjImageSerializer(serializers.HyperlinkedModelSerializer):
+class ObjImageSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ObjImage

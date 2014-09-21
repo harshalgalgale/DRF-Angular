@@ -88,3 +88,8 @@ MEDIA_URL = STATIC_URL + 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, *MEDIA_URL.strip("\\").split("/"))
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
+    'PAGINATE_BY': 10
+}
